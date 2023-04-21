@@ -1,0 +1,74 @@
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+h4 {
+  margin: 5px;
+}
+.page_container {
+  flex-direction: column;
+  display: flex;
+  font-family: sans-serif;
+}
+
+.left_column {
+  width: 30%;
+}
+
+.right_column {
+  width: 60%;
+}
+
+.row {
+  display: flex;
+  margin-top: 15px;
+}
+
+.input_field {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
+#nthDose,
+#idType {
+  width: 450px;
+}
+
+#idno {
+  width: 250px;
+}
+option {
+  padding: 5px;
+  font-size: 14;
+}
+
+.grey {
+  color: gray;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+a:link {
+  color: rgb(184, 68, 68);
+}
+.textfield {
+  border: 1px grey solid;
+  padding: 15px;
+}
+
+.textfield_bg {
+  background-color: rgb(255, 251, 242);
+}
+
+.dark_red {
+  color: darkred;
+}
+
+.red {
+  color: red;
+}

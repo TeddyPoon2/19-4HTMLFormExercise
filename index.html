@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>COVID-19 Vaccination Programme - Booking System</title>
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="head_container">
+        <h3>COVID-19 Vaccination Programme - Booking System</h3>
+        <hr />
+      </div>
+      <form action="#" method="get">
+        <!-- row 1 -->
+        <div class="row">
+          <div class="left_column">
+            <label for="nthDose">Please select the dose of vaccination:</label>
+          </div>
+          <div class="right_column">
+            <select name="nthDose" id="nthDose" class="input_field" required>
+              <option value="1">1st dose</option>
+              <option value="2">2nd dose</option>
+              <option value="3">3rd dose</option>
+              <option value="4">4th dose</option>
+            </select>
+          </div>
+        </div>
+        <p class="grey underline">Please fill in all fields</p>
+        <!-- row 2 -->
+        <div class="row">
+          <div class="left_column">
+            <label for="idType">Identity document type:</label>
+          </div>
+          <div class="right_column">
+            <select name="idType" id="idType" class="input_field" required>
+              <option value="hkid">HKID</option>
+              <option value="birthCert">Birth Cert</option>
+              <option value="corp_id">Consular Corps ID</option>
+              <option value="exemption">Certificate of Exemption</option>
+            </select>
+            <p>
+              For Hong Kong residents not holding any of the above, please refer
+              to
+              <a href="https://www.covidvaccine.gov.hk/en/faq#faq87"
+                >Question no. 87 of FAQs</a
+              >.
+            </p>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row">
+          <div class="left_column">
+            <label for="idno">Identity document number:</label>
+          </div>
+          <div class="right_column">
+            <input
+              type="text"
+              name="idno"
+              id="idno"
+              placeholder="e.g: A123456(7)"
+              class="input_field"
+              required
+            />
+          </div>
+        </div>
+        <!-- row 4 -->
+        <div class="row">
+          <div class="left_column">
+            <label for="dob">Date of birth on Identity document:</label>
+          </div>
+          <div class="right_column">
+            <select name="dob_day" id="dob_day" class="input_field" required>
+              <option value="">Day</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+
+            <select
+              name="dob_month"
+              id="dob_month"
+              class="input_field"
+              required
+            >
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+
+            <select name="dob_year" id="dob_year" class="input_field" required>
+              <option value="">Year</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+            </select>
+            <br />
+            <span class="grey"
+              >(If there is no complete date of birth on Identity document,
+              please select “Not Applicable” in the corresponding data
+              field.)</span
+            >
+          </div>
+        </div>
+        <!-- row 5 -->
+        <div class="row">
+          <div class="left_column">
+            <label for="sec_dose_date"
+              >The date of your second dose vaccination:</label
+            >
+          </div>
+          <div class="right_column">
+            <select
+              name="sec_dose_day"
+              id="sec_dose_day"
+              class="input_field"
+              required
+            >
+              <option value="">Day</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+
+            <select
+              name="sec_dose_month"
+              id="sec_dose_month"
+              class="input_field"
+              required
+            >
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+
+            <select
+              name="sec_dose_year"
+              id="sec_dose_year"
+              class="input_field"
+              required
+            >
+              <option value="">Year</option>
+              <option value="2023">2021</option>
+              <option value="2022">2022</option>
+              <option value="2021">2023</option>
+            </select>
+          </div>
+        </div>
+        <!-- row 6 -->
+        <div class="row">
+          <div class="left_column">
+            <span>
+              Third Dose Eligibility Group:<br />
+              <a
+                href="https://www.covidvaccine.gov.hk/pdf/Poster_recommend_third_dose.pdf"
+                >Details</a
+              >
+            </span>
+          </div>
+          <div class="right_column textfield">
+            <h4 class="underline">
+              If you have not been infected with COVID-19:
+            </h4>
+            <br />
+            <span class="underline"
+              >Interval between 2nd and 3rd dose is at least 28 days</span
+            >
+            <br />
+            <input type="radio" name="eligible" id="opt1" />
+            <label for="opt1"
+              >Immunocompromised individuals (Immunocompromised medical
+              certificate required as proof)</label
+            >
+            <br />
+            <br />
+            <span class="underline">
+              Interval between <sup>2nd</sup> and 3rd dose is at least 90
+              days</span
+            >
+            <br />
+            <input type="radio" name="eligible" id="opt2" />
+            <label for="opt2">Other persons aged 18 or above</label>
+            <br />
+            <input type="radio" name="eligible" id="opt3" />
+            <label for="opt3"
+              >Persons aged 6 months to 4 years who have received two doses of 3
+              mcg BioNTech vaccine</label
+            >
+            <br />
+            <input type="radio" name="eligible" id="opt4" />
+            <label for="opt1">
+              Persons between age 5-11 who have received two doses of 3 mcg
+              BioNTech vaccine, and select 10 mcg BioNTech or Sinovac as 3rd
+              dose of vaccination
+            </label>
+            <br />
+            <input type="radio" name="eligible" id="opt5" />
+            <label for="opt1"
+              >Persons aged 6 months to 17 years who have received two doses of
+              Sinovac vaccine</label
+            >
+            <br />
+            <input type="radio" name="eligible" id="opt6" />
+            <label for="opt1"
+              >Persons aged 6 months to 17 years who have received two doses of
+              vaccine, with Sinovac as the second dose, and select Sinovac as
+              3rd dose of vaccination</label
+            >
+          </div>
+        </div>
+        <!-- row 7 -->
+        <div class="row">
+          <div class="left_column"></div>
+          <div class="right_column textfield textfield_bg">
+            <h4 class="underline dark_red">
+              COVID-19 booster vaccination for year 2023 If you are COVID-19
+              recovered persons ^:
+            </h4>
+            <br />
+            <span class="underline red"
+              >^For COVID-19 recovered persons, please refer to the “Factsheet
+              on COVID-19 Vaccination for Persons with Prior COVID-19 Infection”
+              Here for the vaccination arrangement before booking. Persons who
+              are unsure if they had a previous COVID-19 infection or persons
+              who do not have their recovery record in the Department of
+              Health's system are required to follow the relevant vaccination
+              requirements applicable to uninfected persons. If an individual
+              acquired COVID-19 infection and was tested positive for the first
+              time within 14 days after receiving vaccination, they should not
+              take one less dose of COVID-19 vaccine despite this infection
+              episode. Persons who have recovered from more than one COVID-19
+              infection episode require one less dose than the general
+              public.</span
+            >
+            <br />
+            <br />
+            <span class="underline">
+              Interval between <sup>2nd</sup> and <sup>3rd</sup> dose is at
+              least 90 days</span
+            >
+            <br />
+            <input type="radio" name="interval" id="interval_opt1" />
+            <label for="interval_opt1"
+              >Recovered persons aged 50 or above (at least 90 days after
+              recovery)</label
+            >
+            <br />
+            <input type="radio" name="interval" id="interval_opt2" />
+            <label for="interval_opt2"
+              >Recovered persons who belong to Immunocompromised individuals (at
+              least 90 days after recovery)(medical certificate required as
+              proof)</label
+            >
+            <br />
+            <br />
+            <span class="underline">
+              Interval between <sup>2nd</sup> and <sup>3rd</sup> dose is at
+              least 90 days</span
+            >
+            <br />
+            <br />
+            <input type="radio" name="interval" id="interval_opt3" />
+            <label for="interval_opt3"
+              >Persons aged 18 to 49 and belong to the following groups (at
+              least 180 days after recovery)<br /><br />- Persons aged 18 to 49
+              and belong to the following groups (at least 180 days after
+              recovery)<br /><br />- pregnant women<br /><br />- healthcare
+              workers</label
+            >
+            <br />
+            <br />
+            <span
+              >For the above persons aged 18 to 49 years, please bring along the
+              relevant supporting documents for vaccination site to confirm
+              eligibility of receiving vaccine.</span
+            >
+          </div>
+        </div>
+        <!-- row 8 -->
+        <div class="row">
+          <div class="left_column">
+            <span>Choose the vaccine for your third dose:</span>
+            <br />
+            <span class="red"
+              >Remark: Recovered persons aged 49 years or below who have
+              received two doses of COVID-19 vaccine (except Immunocompromised
+              individuals or persons belonging to other priority groups) are not
+              eligible to receive the third dose of vaccination free of charge
+              under the Government vaccination programme. Please click here for
+              the recommended vaccination arrangement.</span
+            >
+          </div>
+          <div class="right_column">
+            <input type="radio" name="vaccine_choice" id="vaccine_choice1" />
+            <label for="vaccine_choice1"
+              >BioNTech/Fosun [Comirnaty](Aged 6 months or Above Only)</label
+            >
+            <br />
+            <br />
+            <input type="radio" name="vaccine_choice" id="vaccine_choice2" />
+            <label for="vaccine_choice2">
+              BioNTech/Fosun [Comirnaty Bivalent](Aged 12 years or Above Only)
+              For the difference between various formulations of Comirnaty,
+              please refer to the factsheet for “Comirnaty”.</label
+            >
+            <br />
+            <br />
+            <input type="radio" name="vaccine_choice" id="vaccine_choice3" />
+            <label for="vaccine_choice3"
+              >Sinovac(Aged 6 months or Above Only)</label
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
